@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE book PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "">
+<book xmlns="http://www.devhelp.net/book" title="Yubico Universal 2nd Factor C Library" link="index.html" author="" name="u2f-host" version="2" language="c">
+  <chapters>
+    <sub name="Yubico Universal 2nd Factor C Library" link="intro.html">
+      <sub name="u2f-host" link="u2f-host-u2f-host.html"/>
+      <sub name="u2f-host-types" link="u2f-host-u2f-host-types.html"/>
+      <sub name="u2f-host-version" link="u2f-host-u2f-host-version.html"/>
+    </sub>
+  </chapters>
+  <functions>
+    <keyword type="function" name="u2fh_global_init ()" link="u2f-host-u2f-host.html#u2fh-global-init"/>
+    <keyword type="function" name="u2fh_global_done ()" link="u2f-host-u2f-host.html#u2fh-global-done"/>
+    <keyword type="function" name="u2fh_strerror ()" link="u2f-host-u2f-host.html#u2fh-strerror"/>
+    <keyword type="function" name="u2fh_strerror_name ()" link="u2f-host-u2f-host.html#u2fh-strerror-name"/>
+    <keyword type="function" name="u2fh_devs_init ()" link="u2f-host-u2f-host.html#u2fh-devs-init"/>
+    <keyword type="function" name="u2fh_devs_discover ()" link="u2f-host-u2f-host.html#u2fh-devs-discover"/>
+    <keyword type="function" name="u2fh_devs_done ()" link="u2f-host-u2f-host.html#u2fh-devs-done"/>
+    <keyword type="function" name="u2fh_register ()" link="u2f-host-u2f-host.html#u2fh-register"/>
+    <keyword type="function" name="u2fh_authenticate ()" link="u2f-host-u2f-host.html#u2fh-authenticate"/>
+    <keyword type="function" name="u2fh_sendrecv ()" link="u2f-host-u2f-host.html#u2fh-sendrecv"/>
+    <keyword type="function" name="u2fh_get_device_description ()" link="u2f-host-u2f-host.html#u2fh-get-device-description"/>
+    <keyword type="function" name="u2fh_is_alive ()" link="u2f-host-u2f-host.html#u2fh-is-alive"/>
+    <keyword type="enum" name="enum u2fh_rc" link="u2f-host-u2f-host-types.html#u2fh-rc"/>
+    <keyword type="enum" name="enum u2fh_initflags" link="u2f-host-u2f-host-types.html#u2fh-initflags"/>
+    <keyword type="enum" name="enum u2fh_cmdflags" link="u2f-host-u2f-host-types.html#u2fh-cmdflags"/>
+    <keyword type="typedef" name="u2fh_devs" link="u2f-host-u2f-host-types.html#u2fh-devs"/>
+    <keyword type="function" name="u2fh_check_version ()" link="u2f-host-u2f-host-version.html#u2fh-check-version"/>
+    <keyword type="macro" name="U2FH_VERSION_STRING" link="u2f-host-u2f-host-version.html#U2FH-VERSION-STRING:CAPS"/>
+    <keyword type="macro" name="U2FH_VERSION_NUMBER" link="u2f-host-u2f-host-version.html#U2FH-VERSION-NUMBER:CAPS"/>
+    <keyword type="macro" name="U2FH_VERSION_MAJOR" link="u2f-host-u2f-host-version.html#U2FH-VERSION-MAJOR:CAPS"/>
+    <keyword type="macro" name="U2FH_VERSION_MINOR" link="u2f-host-u2f-host-version.html#U2FH-VERSION-MINOR:CAPS"/>
+    <keyword type="macro" name="U2FH_VERSION_PATCH" link="u2f-host-u2f-host-version.html#U2FH-VERSION-PATCH:CAPS"/>
+  </functions>
+</book>

@@ -1,0 +1,54 @@
+= YKCLIENT(1)
+:doctype:	manpage
+:man source:	ykclient
+:man version:	2.15
+
+== NAME
+ykclient - YubiCloud One-Time-Password Validation Client
+
+== SYNOPSIS
+*ykclient* [OPTION]... CLIENTID YUBIKEYOTP
+
+== OPTIONS
+*--help*::
+Display this help screen
+
+*--version*::
+Display version information
+
+*--debug*::
+Print debugging information
+
+*--url*::
+URL      Validation service URL, for example,
+"http://api.yubico.com/wsapi/verify"
+
+*--ca*::
+CADIR     Path to directory containing Certificate Authoritity,
+e.g., "/usr/local/etc/CERTS"
+
+*--cai*::
+CAFILE   Path to a file holding one or more certificated to
+verify the peer with
+
+*--apikey*::
+Key   API key for HMAC validation of request/response
+
+*--proxy*::
+ip:port  Connect to validation service through a proxy,
+e.g., "socks5h://user:pass@127.0.0.1:1080"
+
+== OTHER
+Validate the YUBIKEYOTP one-time-password against the YubiCloud
+using CLIENTID as the client identifier.
+ +
+
+Mandatory arguments to long options are mandatory for short options too.
+Exit status is 0 on success, 1 if there is a hard failure, 2 if the
+OTP was replayed, 3 for other soft OTP-related failures.
+ +
+
+
+== REPORTING BUGS
+Report bugs at <https://github.com/Yubico/yubico-c-client>.
+

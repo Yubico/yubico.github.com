@@ -1,0 +1,31 @@
+#!/bin/sh
+
+set -e
+
+PROJECT="$1"
+
+if test -z "$PROJECT"; then
+    echo "Usage: save-mans.sh <PROJECT> [MANFILES]..."
+    exit 1
+else
+    shift
+fi
+
+DIR="$(dirname "$0")"
+
+if ! test -d "$DIR/$PROJECT"; then
+    echo "error: $PROJECT doesn't exist"
+    exit 1
+fi
+
+mkdir -p $DIR/$PROJECT/mans
+
+for manfiles in "$@"; do
+    cp $manfiles $DIR/$PROJECT/mans/
+done
+
+cd $(dirname "$0")
+git pull
+git add $PROJECT/mans
+
+git commit -m "Man pages for $PROJECT $VERSION"

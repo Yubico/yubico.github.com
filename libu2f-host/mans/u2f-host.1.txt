@@ -1,0 +1,39 @@
+= U2F-HOST(1)
+:doctype:	manpage
+:man source:	u2f-host
+:man version:	1.1.2
+
+== NAME
+u2f-host - Yubico Universal 2nd Factor (U2F) Host Tool
+
+== SYNOPSIS
+*u2f-host* [OPTIONS]...
+
+== OPTIONS
+*-h, --help*::
+Print help and exit
+
+*-V, --version*::
+Print version and exit
+
+*-o, --origin=STRING*::
+Origin URL to use.
+
+*-a, --action=ENUM*::
+Action to take.  (possible values="register",
+"authenticate", "sendrecv")
+
+*-t, --touch*::
+Invert user-presence flag (on by default)
+(default=off)
+
+*-d, --debug*::
+Print debug information to standard error
+(default=off)
+
+*-c, --command=STRING*::
+Command for sendrecv action
+
+== REPORTING BUGS
+Report bugs at <https://github.com/Yubico/libu2f-host>.
+

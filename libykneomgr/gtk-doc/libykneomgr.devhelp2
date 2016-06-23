@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE book PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "">
+<book xmlns="http://www.devhelp.net/book" title="Yubico YubiKey NEO CCID Manager C Library" link="index.html" author="" name="libykneomgr" version="2" language="c">
+  <chapters>
+    <sub name="Yubico YubiKey NEO CCID Manager C Library" link="intro.html">
+      <sub name="ykneomgr" link="libykneomgr-ykneomgr.html"/>
+      <sub name="ykneomgr-types" link="libykneomgr-ykneomgr-types.html"/>
+      <sub name="ykneomgr-version" link="libykneomgr-ykneomgr-version.html"/>
+    </sub>
+    <sub name="API Index" link="api-index-full.html"/>
+  </chapters>
+  <functions>
+    <keyword type="function" name="ykneomgr_global_init ()" link="libykneomgr-ykneomgr.html#ykneomgr-global-init"/>
+    <keyword type="function" name="ykneomgr_global_done ()" link="libykneomgr-ykneomgr.html#ykneomgr-global-done"/>
+    <keyword type="function" name="ykneomgr_strerror ()" link="libykneomgr-ykneomgr.html#ykneomgr-strerror"/>
+    <keyword type="function" name="ykneomgr_strerror_name ()" link="libykneomgr-ykneomgr.html#ykneomgr-strerror-name"/>
+    <keyword type="function" name="ykneomgr_init ()" link="libykneomgr-ykneomgr.html#ykneomgr-init"/>
+    <keyword type="function" name="ykneomgr_done ()" link="libykneomgr-ykneomgr.html#ykneomgr-done"/>
+    <keyword type="function" name="ykneomgr_list_devices ()" link="libykneomgr-ykneomgr.html#ykneomgr-list-devices"/>
+    <keyword type="function" name="ykneomgr_connect ()" link="libykneomgr-ykneomgr.html#ykneomgr-connect"/>
+    <keyword type="function" name="ykneomgr_discover ()" link="libykneomgr-ykneomgr.html#ykneomgr-discover"/>
+    <keyword type="function" name="ykneomgr_discover_match ()" link="libykneomgr-ykneomgr.html#ykneomgr-discover-match" since="0.1.4"/>
+    <keyword type="function" name="ykneomgr_get_version_major ()" link="libykneomgr-ykneomgr.html#ykneomgr-get-version-major"/>
+    <keyword type="function" name="ykneomgr_get_version_minor ()" link="libykneomgr-ykneomgr.html#ykneomgr-get-version-minor"/>
+    <keyword type="function" name="ykneomgr_get_version_build ()" link="libykneomgr-ykneomgr.html#ykneomgr-get-version-build"/>
+    <keyword type="function" name="ykneomgr_get_mode ()" link="libykneomgr-ykneomgr.html#ykneomgr-get-mode"/>
+    <keyword type="function" name="ykneomgr_get_serialno ()" link="libykneomgr-ykneomgr.html#ykneomgr-get-serialno"/>
+    <keyword type="function" name="ykneomgr_modeswitch ()" link="libykneomgr-ykneomgr.html#ykneomgr-modeswitch"/>
+    <keyword type="function" name="ykneomgr_authenticate ()" link="libykneomgr-ykneomgr.html#ykneomgr-authenticate"/>
+    <keyword type="function" name="ykneomgr_applet_list ()" link="libykneomgr-ykneomgr.html#ykneomgr-applet-list"/>
+    <keyword type="function" name="ykneomgr_applet_delete ()" link="libykneomgr-ykneomgr.html#ykneomgr-applet-delete"/>
+    <keyword type="function" name="ykneomgr_applet_install ()" link="libykneomgr-ykneomgr.html#ykneomgr-applet-install"/>
+    <keyword type="function" name="ykneomgr_send_apdu ()" link="libykneomgr-ykneomgr.html#ykneomgr-send-apdu"/>
+    <keyword type="enum" name="enum ykneomgr_rc" link="libykneomgr-ykneomgr-types.html#ykneomgr-rc"/>
+    <keyword type="enum" name="enum ykneomgr_initflags" link="libykneomgr-ykneomgr-types.html#ykneomgr-initflags"/>
+    <keyword type="typedef" name="ykneomgr_dev" link="libykneomgr-ykneomgr-types.html#ykneomgr-dev"/>
+    <keyword type="function" name="ykneomgr_check_version ()" link="libykneomgr-ykneomgr-version.html#ykneomgr-check-version"/>
+    <keyword type="macro" name="YKNEOMGR_VERSION_STRING" link="libykneomgr-ykneomgr-version.html#YKNEOMGR-VERSION-STRING:CAPS"/>
+    <keyword type="macro" name="YKNEOMGR_VERSION_NUMBER" link="libykneomgr-ykneomgr-version.html#YKNEOMGR-VERSION-NUMBER:CAPS"/>
+    <keyword type="macro" name="YKNEOMGR_VERSION_MAJOR" link="libykneomgr-ykneomgr-version.html#YKNEOMGR-VERSION-MAJOR:CAPS"/>
+    <keyword type="macro" name="YKNEOMGR_VERSION_MINOR" link="libykneomgr-ykneomgr-version.html#YKNEOMGR-VERSION-MINOR:CAPS"/>
+    <keyword type="macro" name="YKNEOMGR_VERSION_PATCH" link="libykneomgr-ykneomgr-version.html#YKNEOMGR-VERSION-PATCH:CAPS"/>
+  </functions>
+</book>

@@ -1,0 +1,43 @@
+#!/bin/bash
+
+set -e
+
+PROJECT="$1"
+VERSION="$2"
+
+if [ "$PROJECT" == "" ] || [ "$VERSION" == "" ]; then
+	echo "Usage: publish.sh <PROJECT> <VERSION> [ARTIFACT]..."
+	exit 1
+else
+	shift
+	shift
+fi
+
+DIR="$(dirname "$0")"
+
+if [ ! -d "$DIR/$PROJECT" ]; then
+	echo "Project: $PROJECT doesn't exist!"
+	exit 1
+fi
+
+echo "Publishing $PROJECT $VERSION"
+
+for artifact in "$@"; do
+	cp $artifact $DIR/$PROJECT/releases/
+done
+
+cd $(dirname "$0")
+git pull
+git add $PROJECT/releases
+
+#Individual publish scripts should git add any files they modify,
+#but leave the commit to this script.
+PUBLISH_SCRIPT="$PROJECT/publish"
+
+if [ -f $PUBLISH_SCRIPT ]; then
+	echo "Running $PUBLISH_SCRIPT..."
+	(cd $PROJECT; ./publish)
+fi
+
+git commit -m "$PROJECT $VERSION"
+echo "All done, don't forget to run git push"
